@@ -1,3 +1,5 @@
+from tables_values import *
+
 class Shaft():
     """By default, the shaft will be initialized as a steel shaft. These values will be input later."""
     def __init__(self, length, stresses, units="metric"):
@@ -41,3 +43,6 @@ safety factors! Or force safety factors dependent on case (see the slides for sp
 elasticipy can be VERY useful (J2 for von mises, eigenstresses, tensor)
 """
 # Should we define a subclass within the Shaft class as something like a ShaftAssembly? It would inherit the attributes but we could add that dictionary of components.
+
+def effective_endurance_limit(S_ut,d_min,):
+    return 0
